@@ -1,0 +1,29 @@
+/* Login/Register form - start
+   ========================================================================== */
+
+@include phone-portrait() {
+
+    .mkdf-login-register-content.ui-tabs {
+
+        &.mkdf-user-not-logged-in {
+
+            ul li a {
+                font-size: 12px;
+            }
+
+            ul li {
+                &:nth-child(1),
+                &:nth-child(2) {
+                    width: 25%;
+                }
+                &:nth-child(3) {
+                    width: 50%;
+                }
+            }
+
+        }
+    }
+}
+
+/* Login/Register form - end
+   ========================================================================== */

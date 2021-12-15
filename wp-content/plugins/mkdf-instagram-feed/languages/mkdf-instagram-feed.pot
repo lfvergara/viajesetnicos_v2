@@ -1,0 +1,103 @@
+# Copyright (C) 2021 Mikado Themes
+# This file is distributed under the same license as the Mikado Instagram Feed plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Mikado Instagram Feed 2.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mkdf-instagram-feed\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-05-24T15:15:43+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.3.0\n"
+"X-Domain: mkdf-instagram-feed\n"
+
+#. Plugin Name of the plugin
+msgid "Mikado Instagram Feed"
+msgstr ""
+
+#. Description of the plugin
+msgid "Plugin that adds Instagram feed functionality to our theme"
+msgstr ""
+
+#. Author of the plugin
+msgid "Mikado Themes"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:13
+msgid "Mikado Instagram Widget"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:15
+msgid "Display your Instagram feed"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:27
+msgid "Title"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:32
+msgid "Type"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:34
+msgid "Gallery"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:35
+msgid "Carousel"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:41
+msgid "Number of Columns"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:43
+msgid "Two"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:44
+msgid "Three"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:45
+msgid "Four"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:46
+msgid "Six"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:47
+msgid "Nine"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:53
+msgid "Number of Photos"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:58
+msgid "Space Between Items"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:60
+msgid "Normal"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:61
+msgid "Small"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:62
+msgid "Tiny"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:63
+msgid "No Space"
+msgstr ""
+
+#: widgets/mkdf-instagram-widget.php:69
+msgid "Images Cache Time"
+msgstr ""

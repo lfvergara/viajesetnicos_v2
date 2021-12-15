@@ -1,0 +1,243 @@
+/* Login/Register form - start
+   ========================================================================== */
+
+.mkdf-login-register-holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1002;
+
+    .mkdf-login-register-content {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        @include mkdfTransform(translateY(-50%));
+    }
+
+    .mkdf-membership-popup-title{
+        margin: 0 0 38px;
+        font-family: 'Kristi', serif;
+        color: $first-main-color;
+        font-size: 40px;
+        text-align: center;
+    }
+}
+
+
+
+.mkdf-login-register-content.ui-tabs {
+    position: relative;
+    margin: 0 auto;
+    width: 330px;
+    box-sizing: border-box;
+
+    &.mkdf-user-not-logged-in{
+        width: 600px;
+        max-width: 100%;
+
+        ul li {
+            width: 33.33%;
+        }
+
+        .mkdf-login-content-inner,
+        .mkdf-register-content-inner,
+        .mkdf-reset-pass-content-inner{
+            padding-left: 0;
+            padding-right: 0;
+            background-color: transparent;
+
+            .mkdf-membership-popup-title{
+                display: none;
+            }
+        }
+    }
+
+    ul {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        clear: both;
+
+        li {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            float: left;
+            width: 50%;
+            margin: 0;
+            padding: 0;
+            line-height: 50px;
+            text-align: center;
+            background-color: #242424;
+
+            &.ui-state-active {
+                background-color: #1c1c1c;
+            }
+
+            a {
+                padding: 17px 0;
+                display: block;
+                color: #fff;
+                font-size: 18px;
+                line-height: 1.667em;
+                font-weight: 700;
+                font-family: $default-heading-font;
+            }
+        }
+    }
+
+    .mkdf-login-content-inner,
+    .mkdf-register-content-inner,
+    .mkdf-reset-pass-content-inner{
+        padding: 30px;
+        background-color: #1c1c1c;
+    }
+
+    .mkdf-lost-pass-remember-holder {
+        display: inline-block;
+        margin-top: 15px;
+
+        .mkdf-login-remember {
+            position: relative;
+            display: inline-block;
+
+            & > * {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+
+        label {
+            margin-left: 5px;
+            font-size: 15px;
+            line-height: 13px;
+        }
+
+        input {
+            margin: -2px 0 0;
+            top: 2px;
+        }
+
+        .mkdf-btn {
+            margin: 30px 0 0;
+            width: 100%;
+        }
+    }
+
+    .mkdf-login-action-btn {
+        position: relative;
+        display: inline-block;
+        margin: 9px 0 0;
+        color: $first-main-color;
+        font-size: 15px;
+        float: right;
+        -webkit-transition: color 0.2s ease-out;
+        -moz-transition: color 0.2s ease-out;
+        transition: color 0.2s ease-out;
+
+        &:hover {
+            color: $default-text-color;
+        }
+
+        .mkdf-login-register-holder &:hover {
+            color: #fff;
+        }
+    }
+
+    fieldset{
+        > div{
+            position: relative;
+        }
+
+        .mkdf-login-pw{
+            margin: 0 0 11px;
+        }
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"]{
+        margin-bottom: 10px;
+        background-color: #fff;
+        font-size: 15px;
+        color: #7b7b7b;
+        padding-left: 40px;
+    }
+
+    .mkdf-popup-icon{
+        font-size: 15px;
+        color: $first-main-color;
+        position: absolute;
+        z-index: 1;
+        line-height: 45px;
+        left: 12px;
+    }
+
+    .mkdf-login-button-holder,
+    .mkdf-register-button-holder,
+    .mkdf-reset-password-button-holder {
+        .mkdf-btn {
+            margin: 23px 0 0;
+            width: 100%;
+        }
+    }
+
+    .mkdf-login-form-social-login {
+        background-color: #f9f9f9;
+        border-top: 1px solid #ebebeb;
+        padding: 23px 0 34px;
+        margin: 12px 0 0;
+        text-align: center;
+
+        .mkdf-login-social-title{
+            margin-bottom: 15px;
+        }
+
+        form {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .mkdf-google-login,
+        .mkdf-facebook-login {
+            .mkdf-btn-text {
+                margin: 0;
+            }
+        }
+
+        .mkdf-facebook-login,
+        .mkdf-google-login{
+            padding: 0;
+
+            .mkdf-btn-text{
+                line-height: 30px;
+                padding: 0 12px 0 10px;
+            }
+
+            .mkdf-btn-icon-holder{
+                float: left;
+                font-size: 13px;
+                padding: 6px 10px;
+                border-right: 1px solid rgba(255,255,255,0.2);
+            }
+
+            .mkdf-btn-icon-holder .mkdf-btn-icon-elem{
+                vertical-align: baseline;
+            }
+        }
+
+    }
+}
+
+/* Login/Register form - end
+   ========================================================================== */

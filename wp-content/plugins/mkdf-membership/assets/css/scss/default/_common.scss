@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Mikadof Membership Plugin Style - begin
+   ========================================================================== */
+
+.mkdf-social-login-holder input[type="text"],
+.mkdf-social-login-holder input[type="email"],
+.mkdf-social-login-holder input[type="password"],
+.mkdf-social-register-holder input[type="text"],
+.mkdf-social-register-holder input[type="email"],
+.mkdf-social-register-holder input[type="password"],
+.mkdf-social-reset-password-holder input[type="text"],
+.mkdf-social-reset-password-holder input[type="email"],
+.mkdf-social-reset-password-holder input[type="password"] {
+    position: relative;
+    width: 100%;
+    margin: 0 0 14px;
+    padding: 12px 18px;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: inherit;
+    color: $default-text-color;
+    background-color: transparent;
+    border: 1px solid $default-border-color;
+    outline: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+
+    &:focus {
+        border-color: $default-heading-color;
+    }
+
+    @include mkdfPlaceholder {
+        color: $default-text-color;
+    }
+}
+
+.mkdf-login-register-content.ui-tabs .mkdf-social-reset-password-holder input[type="text"] {
+    padding-left: 20px;
+}
+
+.mkdf-membership-response-holder {
+    .mkdf-membership-response {
+        display: block;
+        margin: 14px 0 0;
+        font-size: 15px;
+
+        .mkdf-login-register-holder &.mkdf-membership-message-succes {
+            color: #fff;
+            font-weight: 400;
+        }
+
+        &.mkdf-membership-message-error {
+            color: #ff3d27;
+        }
+    }
+}
+
+.mkdf-wp-register-holder {
+    .mkdf-register-notice h5 {
+        margin: 0;
+        color: #fff;
+    }
+}
+
+/* ==========================================================================
+   Mikadof Membership Plugin Style - end
+   ========================================================================== */
