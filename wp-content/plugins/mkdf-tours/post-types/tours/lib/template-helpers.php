@@ -256,7 +256,7 @@ if(!function_exists('mkdf_tours_get_tour_price_html_dharma')) {
 
 		<span class="<?php echo esc_attr(implode(' ', $holder_class)); ?>">
 			<?php if($price) : ?>
-				<span class="mkdf-tours-item-price <?php echo esc_attr($price_on_discount_class);?>" style="padding-right: 0px !important; padding-top: 0px !important;"><?php echo $price; ?></span>
+				<span class="mkdf-tours-item-price <?php echo esc_attr($price_on_discount_class);?>"><?php echo $price; ?></span>
 			<?php endif; ?>
 			<?php if($discount_price) : ?>
 				<span class="mkdf-tours-item-discount-price mkdf-tours-item-price">
@@ -292,10 +292,10 @@ if(!function_exists('mkdf_tours_get_tour_min_age_html')) {
 			    
 			    <span class="mkdf-tour-min-age-icon mkdf-tour-info-icon" style="margin-top:  1%;">
 				    <!--<span class="icon_group"></span>-->
+					<?php echo mkdf_tours_get_tour_price_html_dharma(get_the_ID()); ?>
 			    </span>
 
 				<span class="mkdf-tour-info-label">
-					<?php echo mkdf_tours_get_tour_price_html_dharma(get_the_ID()); ?>
 					<?php echo esc_html($min_age); ?>
 					<!--
 					<?php //if($age_label) : ?>
