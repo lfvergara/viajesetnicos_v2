@@ -38,6 +38,7 @@ extract($tour_sections);
                         <?php mkdf_tours_get_tour_info_part('tour-info-parts/destination'); ?>
                         <?php mkdf_tours_get_tour_info_part('tour-info-parts/categories'); ?>
                         <?php mkdf_tours_get_tour_info_part('tour-info-parts/years'); ?>
+                        <?php echo mkdf_tours_get_tour_price_html(get_the_ID()); ?>
                     </div>
                     <?php mkdf_tours_get_tour_info_part('tour-info-parts/content'); ?>
                     <?php echo mkdf_core_list_review_details('simple-overall'); ?>
