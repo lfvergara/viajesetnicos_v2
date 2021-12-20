@@ -292,10 +292,10 @@ if(!function_exists('mkdf_tours_get_tour_min_age_html')) {
 			    
 			    <span class="mkdf-tour-min-age-icon mkdf-tour-info-icon" style="margin-top:  2%;">
 				    <span class="icon_ticket"></span>
-					<?php echo mkdf_tours_get_tour_price_html_dharma(get_the_ID()); ?>
 			    </span>
 
 				<span class="mkdf-tour-info-label" style="padding-top: 3%;">
+					<?php echo mkdf_tours_get_tour_price_html_dharma(get_the_ID()); ?><br>
 					<?php echo esc_html($min_age); ?>
 					<!--
 					<?php //if($age_label) : ?>
