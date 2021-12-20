@@ -249,7 +249,7 @@ if(!function_exists('mkdf_tours_get_tour_min_age_html')) {
 
 			<div class="mkdf-tour-min-age-holder">
 			    
-			    <span class="mkdf-tour-min-age-icon mkdf-tour-info-icon" style="margin-top:  2%;">
+			    <span class="mkdf-tour-min-age-icon mkdf-tour-info-icon" style="margin-top:  1%;">
 					<?php echo mkdf_tours_get_tour_price_html(get_the_ID()); ?>
 				    <!--<span class="icon_group"></span>-->
 			    </span>
