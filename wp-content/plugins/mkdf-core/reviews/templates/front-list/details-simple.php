@@ -1,5 +1,5 @@
+<!--
 <div class="mkdf-reviews-list-info mkdf-reviews-simple">
-    <!--
     <div class="mkdf-reviews-number-wrapper">
         <h4 class="mkdf-reviews-summary">
             <span class="mkdf-reviews-number">
@@ -28,5 +28,5 @@
             <?php } ?>
         </span>
     </div>
-    -->
 </div>
+-->
