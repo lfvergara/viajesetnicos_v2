@@ -107,7 +107,7 @@ extract($tour_sections);
                     <?php echo mkdf_tours_get_tour_module_template_part('single/booking-form', 'tours', 'templates', '', $params); ?>
                 <?php endif; ?>
             </div>
-            <div class="mkdf-tours-search-main-filters-holder mkdf-boxed-widget">
+            <div class="mkdf-tours-search-main-filters-holder mkdf-boxed-widget" style="margin-top: 0px !important;">
                 <form action="<?php echo esc_url(mkdf_tours_get_search_page_url()); ?>" method="GET">
                     <div class="mkdf-tours-search-main-filters-title">
                         <h4><?php esc_html_e('Encuentra tu destino', 'mkdf-tours'); ?></h4>
