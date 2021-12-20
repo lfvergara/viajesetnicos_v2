@@ -256,10 +256,11 @@ if(!function_exists('mkdf_tours_get_tour_min_age_html')) {
 
 				<span class="mkdf-tour-info-label">
 					<?php echo esc_html($min_age); ?>
-
-					<?php if($age_label) : ?>
-						<span class="mkdf-tour-min-age-label"><?php esc_html_e('Age', 'mkdf-tours'); ?></span>
-					<?php endif; ?>
+					<!--
+					<?php //if($age_label) : ?>
+						<span class="mkdf-tour-min-age-label"><?php //esc_html_e('Age', 'mkdf-tours'); ?></span>
+					<?php //endif; ?>
+					-->
 				</span>
 			</div>
 
