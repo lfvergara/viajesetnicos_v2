@@ -26,7 +26,7 @@ extract($tour_sections);
 </ul>
 </div>
 <div class="mkdf-grid-row-medium-gutter">
-    <div class="mkdf-grid-col-9">
+    <div class="mkdf-grid-col-10">
         <article class="mkdf-tour-item-wrapper">
 
             <?php if($show_info_section['value'] === 'yes') { ?>
@@ -99,7 +99,7 @@ extract($tour_sections);
 
         </article>
     </div>
-    <div class="mkdf-grid-col-3">
+    <div class="mkdf-grid-col-2">
         <aside class="mkdf-sidebar">
             <div class="widget mkdf-tours-booking-form-holder">
                 <?php if(mkdf_tours_is_tour_bookable()) : ?>
