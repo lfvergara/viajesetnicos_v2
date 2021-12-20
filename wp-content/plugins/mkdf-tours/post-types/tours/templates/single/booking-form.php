@@ -1,12 +1,12 @@
 <?php  ?>
 
 <div class="mkdf-tour-booking-form-holder mkdf-boxed-widget">
-	<h4 class="mkdf-tour-booking-title"><?php esc_html_e('Book this tour', 'mkdf-tours'); ?></h4>
+	<h4 class="mkdf-tour-booking-title"><?php esc_html_e('Reserva tu plaza!', 'mkdf-tours'); ?></h4>
 	<form id="mkdf-tour-booking-form" method="POST">
 		<?php wp_nonce_field('mkdf_tours_booking_form', 'mkdf_tours_booking_form'); ?>
 
 		<div class="mkdf-tour-booking-field-holder mkdf-tours-input-with-icon">
-			<input type="text" placeholder="<?php esc_attr_e('Name*', 'mkdf-tours'); ?>" value="<?php echo esc_attr(mkdf_tours_get_current_user_name()); ?>" name="user_name">
+			<input type="text" placeholder="<?php esc_attr_e('Nombre*', 'mkdf-tours'); ?>" value="<?php echo esc_attr(mkdf_tours_get_current_user_name()); ?>" name="user_name">
 
 			<span class="mkdf-tours-input-icon">
 				<i class="ion-compose"></i>
@@ -22,7 +22,7 @@
 		</div>
 
 		<div class="mkdf-tour-booking-field-holder mkdf-tours-input-with-icon">
-			<input type="text" autocomplete="off"  value="" placeholder="<?php esc_attr_e('Confirm Email*', 'mkdf-tours'); ?>" name="user_confirm_email">
+			<input type="text" autocomplete="off"  value="" placeholder="<?php esc_attr_e('Confirma Email*', 'mkdf-tours'); ?>" name="user_confirm_email">
 
 			<span class="mkdf-tours-input-icon">
 				<i class="ion-android-mail"></i>
@@ -30,7 +30,7 @@
 		</div>
 
 		<div class="mkdf-tour-booking-field-holder mkdf-tours-input-with-icon">
-			<input type="text" placeholder="<?php esc_attr_e('Phone*', 'mkdf-tours'); ?>" name="user_phone">
+			<input type="text" placeholder="<?php esc_attr_e('Teléfono*', 'mkdf-tours'); ?>" name="user_phone">
 
 			<span class="mkdf-tours-input-icon">
 				<i class="ion-android-call"></i>
@@ -48,7 +48,7 @@
 		<div id="mkdf-tour-booking-time-picker"></div>
 
 		<div class="mkdf-tour-booking-field-holder mkdf-tours-input-with-icon">
-			<input type="number" name="number_of_tickets" min="1" placeholder="<?php esc_attr_e('Number of tickets', 'mkdf-tours'); ?>">
+			<input type="number" name="number_of_tickets" min="1" placeholder="<?php esc_attr_e('¿Cuántos viajan?', 'mkdf-tours'); ?>">
 
 			<span class="mkdf-tours-input-icon">
 				<i class="ion-person-stalker"></i>
@@ -56,7 +56,7 @@
 		</div>
 
 		<div class="mkdf-tour-booking-field-holder mkdf-tours-input-with-icon">
-			<textarea name="message" placeholder="<?php esc_attr_e('Message', 'mkdf-tours'); ?>" rows="7"></textarea>
+			<textarea name="message" placeholder="<?php esc_attr_e('Mensaje', 'mkdf-tours'); ?>" rows="7"></textarea>
 		</div>
 
 		<input type="hidden" name="tour_id" value="<?php echo esc_attr(get_the_ID()); ?>">
