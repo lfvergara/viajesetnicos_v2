@@ -296,13 +296,13 @@ if(!function_exists('mkdf_tours_get_tour_min_age_html')) {
 
 				<span class="mkdf-tour-info-label" style="padding-top: 3%;">
 					<?php echo esc_html($min_age); ?>
-					<?php echo mkdf_tours_get_tour_price_html_dharma(get_the_ID()); ?><br>
 					<!--
 					<?php //if($age_label) : ?>
 						<span class="mkdf-tour-min-age-label"><?php //esc_html_e('Age', 'mkdf-tours'); ?></span>
 					<?php //endif; ?>
 					-->
 				</span>
+					<?php echo mkdf_tours_get_tour_price_html_dharma(get_the_ID()); ?><br>
 			</div>
 
 		<?php endif; ?>
