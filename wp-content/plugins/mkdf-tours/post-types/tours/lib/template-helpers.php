@@ -302,8 +302,8 @@ if(!function_exists('mkdf_tours_get_tour_min_age_html')) {
 					<?php //endif; ?>
 					-->
 				</span>
-					<?php echo mkdf_tours_get_tour_price_html_dharma(get_the_ID()); ?><br>
 			</div>
+					<?php echo mkdf_tours_get_tour_price_html_dharma(get_the_ID()); ?><br>
 
 		<?php endif; ?>
 
