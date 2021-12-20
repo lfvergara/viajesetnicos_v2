@@ -110,7 +110,7 @@ extract($tour_sections);
             <div class="mkdf-tours-search-main-filters-holder mkdf-boxed-widget">
                 <form action="<?php echo esc_url(mkdf_tours_get_search_page_url()); ?>" method="GET">
                     <div class="mkdf-tours-search-main-filters-title">
-                        <h4><?php esc_html_e('Find Your Destination', 'mkdf-tours'); ?></h4>
+                        <h4><?php esc_html_e('Encuentra tu destino', 'mkdf-tours'); ?></h4>
                     </div>
 
                     <input type="hidden" name="order_by" value="<?php echo esc_attr(mkdf_tours_search()->getOrderBy()); ?>">
@@ -123,28 +123,28 @@ extract($tour_sections);
                             <span class="mkdf-tours-input-icon">
                                 <span class="icon_search"></span>
                             </span>
-                            <input class="mkdf-tours-keyword-search" value="<?php echo esc_attr($keyword); ?>" type="text" name="keyword" placeholder="<?php esc_attr_e('Search Tour', 'mkdf-tours'); ?>">
+                            <input class="mkdf-tours-keyword-search" value="<?php echo esc_attr($keyword); ?>" type="text" name="keyword" placeholder="<?php esc_attr_e('Tour?', 'mkdf-tours'); ?>">
                         </div>
                         <div class="mkdf-tours-input-with-icon">
                             <span class="mkdf-tours-input-icon mkdf-tours-location-icon">
                                 <span class="ion-ios-location"></span>
                             </span>
-                            <input type="text" value="<?php echo esc_attr($destination); ?>" class="mkdf-tours-destination-search" name="destination" placeholder="<?php esc_attr_e('Where To?', 'mkdf-tours'); ?>">
+                            <input type="text" value="<?php echo esc_attr($destination); ?>" class="mkdf-tours-destination-search" name="destination" placeholder="<?php esc_attr_e('Destino?', 'mkdf-tours'); ?>">
                         </div>
+                        <!--
                         <div class="mkdf-tours-input-with-icon">
                             <span class="mkdf-tours-input-icon">
                                 <span class="ion-calendar"></span>
                             </span>
                             <select name="month" class="mkdf-tours-select-placeholder">
-                                <?php foreach($months as $month_value => $month_label) : ?>
-                                    <?php $selected = $month_value === (int) $chosen_month ? 'selected' : ''; ?>
+                                <?php //foreach($months as $month_value => $month_label) : ?>
+                                    <?php //$selected = $month_value === (int) $chosen_month ? 'selected' : ''; ?>
 
-                                    <option <?php echo esc_attr($selected); ?> value="<?php echo esc_attr($month_value); ?>"><?php echo esc_html($month_label); ?></option>
-                                <?php endforeach; ?>
+                                    <option <?php //echo esc_attr($selected); ?> value="<?php //echo esc_attr($month_value); ?>"><?php //echo esc_html($month_label); ?></option>
+                                <?php //endforeach; ?>
                             </select>
                         </div>
 
-                        <!--
                         <div class="mkdf-tours-range-input"></div>
 
                         <div class="mkdf-tours-input-with-icon mkdf-tours-range-slider">
@@ -159,7 +159,7 @@ extract($tour_sections);
                             <input type="hidden" name="min_price">
                             <input type="hidden" name="max_price">
                         </div>
-                        
+
                         <?php //if(is_array($tour_types) && count($tour_types) && $show_tour_types) : ?>
                             <?php //foreach($tour_types as $type) : ?>
                                 <?php
