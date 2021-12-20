@@ -2,28 +2,28 @@
 extract($tour_sections);
 ?>
 <div class="mkdf-tour-tabs mkdf-horizontal mkdf-tab-text">
-<ul class="mkdf-tabs-nav clearfix">
-    <?php foreach($tour_sections as $section) {
+    <ul class="mkdf-tabs-nav clearfix">
+        <?php foreach($tour_sections as $section) {
 
-        if($section['value'] === 'yes') { ?>
+            if($section['value'] === 'yes') { ?>
 
-            <li class="mkdf-tour-nav-item">
+                <li class="mkdf-tour-nav-item">
 
-                <a href="<?php echo esc_attr($section['id']) ?>">
+                    <a href="<?php echo esc_attr($section['id']) ?>">
 
-                    <span class="mkdf-tour-nav-section-icon <?php echo esc_attr($section['icon']) ?>"></span>
+                        <span class="mkdf-tour-nav-section-icon <?php echo esc_attr($section['icon']) ?>"></span>
 
-                    <span class="mkdf-tour-nav-section-title">
-							<?php echo esc_html($section['title']) ?>
-						</span>
+                        <span class="mkdf-tour-nav-section-title">
+    							<?php echo esc_html($section['title']) ?>
+    						</span>
 
-                </a>
-            </li>
+                    </a>
+                </li>
 
-        <?php }
+            <?php }
 
-    }; ?>
-</ul>
+        }; ?>
+    </ul>
 </div>
 <div class="mkdf-grid-row-medium-gutter">
     <div class="mkdf-grid-col-9">
@@ -144,39 +144,40 @@ extract($tour_sections);
                             </select>
                         </div>
 
+                        <!--
                         <div class="mkdf-tours-range-input"></div>
 
                         <div class="mkdf-tours-input-with-icon mkdf-tours-range-slider">
                             <input type="text" class="mkdf-tours-price-range-field"
-                                data-currency-symbol-position="<?php echo esc_attr($currency_position); ?>"
-                                data-currency-symbol="<?php echo esc_attr($currency_symbol); ?>"
-                                data-min-price="<?php echo esc_attr($min_price); ?>"
-                                data-max-price="<?php echo esc_attr($max_price); ?>"
-                                data-chosen-min-price="<?php echo esc_attr($chosen_min_price); ?>"
-                                data-chosen-max-price="<?php echo esc_attr($chosen_max_price); ?>"
-                                placeholder="<?php esc_attr_e('Price Range', 'mkdf-tours'); ?>">
+                                data-currency-symbol-position="<?php //echo esc_attr($currency_position); ?>"
+                                data-currency-symbol="<?php //echo esc_attr($currency_symbol); ?>"
+                                data-min-price="<?php //echo esc_attr($min_price); ?>"
+                                data-max-price="<?php //echo esc_attr($max_price); ?>"
+                                data-chosen-min-price="<?php //echo esc_attr($chosen_min_price); ?>"
+                                data-chosen-max-price="<?php //echo esc_attr($chosen_max_price); ?>"
+                                placeholder="<?php //esc_attr_e('Price Range', 'mkdf-tours'); ?>">
                             <input type="hidden" name="min_price">
                             <input type="hidden" name="max_price">
                         </div>
-
-
-                        <?php if(is_array($tour_types) && count($tour_types) && $show_tour_types) : ?>
-                            <?php foreach($tour_types as $type) : ?>
+                        
+                        <?php //if(is_array($tour_types) && count($tour_types) && $show_tour_types) : ?>
+                            <?php //foreach($tour_types as $type) : ?>
                                 <?php
-                                $checked = in_array($type->slug, $checked_types);
-                                $checked_attr = $checked ? 'checked' : '';
+                                //$checked = in_array($type->slug, $checked_types);
+                                //$checked_attr = $checked ? 'checked' : '';
                                 ?>
 
                                 <div class="mkdf-tours-type-filter-item">
-                                    <input <?php echo esc_attr($checked_attr); ?> type="checkbox" id="mkdf-tour-type-filter-<?php echo esc_attr($type->slug); ?>" name="type[]" value="<?php echo esc_attr($type->slug); ?>">
-                                    <label for="mkdf-tour-type-filter-<?php echo esc_attr($type->slug); ?>">
+                                    <input <?php //echo esc_attr($checked_attr); ?> type="checkbox" id="mkdf-tour-type-filter-<?php //echo esc_attr($type->slug); ?>" name="type[]" value="<?php //echo esc_attr($type->slug); ?>">
+                                    <label for="mkdf-tour-type-filter-<?php //echo esc_attr($type->slug); ?>">
                                     <span>
-                                        <?php echo esc_html($type->name); ?>
+                                        <?php //echo esc_html($type->name); ?>
                                     </span>
                                     </label>
                                 </div>
-                            <?php endforeach; ?>
-                        <?php endif; ?>
+                            <?php //endforeach; ?>
+                        <?php //endif; ?>
+                        -->
 
                         <?php if(mkdf_tours_theme_installed()) : ?>
                             <?php echo wanderers_mkdf_execute_shortcode('mkdf_button', array(
