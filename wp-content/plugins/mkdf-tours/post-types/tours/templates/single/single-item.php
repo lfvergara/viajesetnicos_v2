@@ -184,13 +184,13 @@ extract($tour_sections);
                                 'html_type'    => 'input',
                                 'input_name'   => 'mkdf_tours_search_submit',
                                 'size'         => 'medium',
-                                'text'         => esc_attr__('Search', 'mkdf-tours'),
+                                'text'         => esc_attr__('Buscar', 'mkdf-tours'),
                                 'custom_attrs' => array(
-                                    'data-searching-label' => esc_attr__('Searching...', 'mkdf-tours')
+                                    'data-searching-label' => esc_attr__('Buscando...', 'mkdf-tours')
                                 )
                             )); ?>
                         <?php else: ?>
-                            <input type="submit" name="mkdf_tours_search_submit" value="<?php esc_attr_e('Search', 'mkdf-tours') ?>" class="mkdf-btn mkdf-btn-medium mkdf-btn-solid" data-searching-label="<?php esc_attr_e('Searching...', 'mkdf-tours'); ?>">
+                            <input type="submit" name="mkdf_tours_search_submit" value="<?php esc_attr_e('Buscar', 'mkdf-tours') ?>" class="mkdf-btn mkdf-btn-medium mkdf-btn-solid" data-searching-label="<?php esc_attr_e('Buscando...', 'mkdf-tours'); ?>">
                         <?php endif; ?>
                         
                         <?php if(mkdf_tours_is_wpml_installed()) { ?>
