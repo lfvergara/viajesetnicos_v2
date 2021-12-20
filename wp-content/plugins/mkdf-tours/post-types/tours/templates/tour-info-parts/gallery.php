@@ -7,7 +7,7 @@ if($image_gallery_val !== '') : ?>
     <div class="mkdf-tour-gallery-item-holder">
 
         <h3 class="mkdf-gallery-title">
-            <?php esc_html_e('From our gallery', 'mkdf-tours'); ?>
+            <?php esc_html_e('De nuestra galería', 'mkdf-tours'); ?>
         </h3>
 
         <p class="mkdf-tour-gallery-item-excerpt">
