@@ -230,6 +230,47 @@ if(!function_exists('mkdf_tours_get_tour_price_html')) {
 	}
 }
 
+if(!function_exists('mkdf_tours_get_tour_price_html_dharma')) {
+	/**
+	 * Generates html part for tour price.
+	 *
+	 * @param int $tour_id
+	 *
+	 * @return string
+	 */
+	function mkdf_tours_get_tour_price_html_dharma($tour_id = null) {
+		$tour_id = empty($tour_id) ? get_the_ID() : $tour_id;
+
+		$price          = mkdf_tours_get_tour_price($tour_id);
+		$discount_price = mkdf_tours_get_tour_discount_price($tour_id);
+
+		$holder_class = array('mkdf-tours-price-holder');
+		$price_on_discount_class = ''; 
+
+		if($discount_price) {
+			$holder_class[] = 'mkdf-tours-price-with-discount';
+			$price_on_discount_class = 'mkdf-tours-price-old';
+		}
+
+		ob_start(); ?>
+
+		<span class="<?php echo esc_attr(implode(' ', $holder_class)); ?>">
+			<?php if($price) : ?>
+				<span class="mkdf-tours-item-price <?php echo esc_attr($price_on_discount_class);?>"><?php echo $price; ?></span>
+			<?php endif; ?>
+			<?php if($discount_price) : ?>
+				<span class="mkdf-tours-item-discount-price mkdf-tours-item-price">
+					<?php echo esc_html($discount_price); ?>
+				</span>
+			<?php endif; ?>
+		</span>
+
+		<?php
+
+		return apply_filters('mkdf_tours_get_tour_price_html', ob_get_clean(), $price, $discount_price);
+	}
+}
+
 if(!function_exists('mkdf_tours_get_tour_min_age_html')) {
 	/**
 	 * @param null $tour_id
@@ -250,11 +291,11 @@ if(!function_exists('mkdf_tours_get_tour_min_age_html')) {
 			<div class="mkdf-tour-min-age-holder">
 			    
 			    <span class="mkdf-tour-min-age-icon mkdf-tour-info-icon" style="margin-top:  1%;">
-					<?php echo mkdf_tours_get_tour_price_html(get_the_ID()); ?>
 				    <!--<span class="icon_group"></span>-->
 			    </span>
 
 				<span class="mkdf-tour-info-label">
+					<?php echo mkdf_tours_get_tour_price_html_dharma(get_the_ID()); ?>
 					<?php echo esc_html($min_age); ?>
 					<!--
 					<?php //if($age_label) : ?>
