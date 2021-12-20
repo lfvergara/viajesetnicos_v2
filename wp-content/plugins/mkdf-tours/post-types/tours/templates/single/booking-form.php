@@ -91,30 +91,30 @@
 
 		<?php if(mkdf_tours_theme_installed()) : ?>
 			<?php echo wanderers_mkdf_execute_shortcode('mkdf_button', array(
-				'text' => esc_html__('Check Availability', 'mkdf-tours'),
+				'text' => esc_html__('Verifica disponibilidad', 'mkdf-tours'),
 				'type' => 'grey',
 				'custom_attrs' => array(
-					'data-loading-label' => esc_attr__('Checking...', 'mkdf-tours')
+					'data-loading-label' => esc_attr__('Verificando...', 'mkdf-tours')
 				),
 				'custom_class' => 'mkdf-tours-check-availability'
 			)); ?>
 		<?php else: ?>
-			<a href="#" class="mkdf-tours-check-availability"><?php esc_html_e('Check Availability', 'mkdf-tours'); ?></a>
+			<a href="#" class="mkdf-tours-check-availability"><?php esc_html_e('Verifica disponibilidad', 'mkdf-tours'); ?></a>
 		<?php endif; ?>
 
 		<?php if(mkdf_tours_theme_installed()) : ?>
 			<?php echo wanderers_mkdf_execute_shortcode('mkdf_button', array(
 				'html_type' => 'input',
 				'input_name' => 'submit',
-				'text' => esc_html__('Book now', 'mkdf-tours'),
+				'text' => esc_html__('Reservar ahora!', 'mkdf-tours'),
 				'custom_attrs' => array(
-					'data-loading-label' => esc_attr__('Working...', 'mkdf-tours'),
-					'data-redirecting-label' => esc_attr__('Redirecting...', 'mkdf-tours'),
+					'data-loading-label' => esc_attr__('Reservando...', 'mkdf-tours'),
+					'data-redirecting-label' => esc_attr__('Redireccionando...', 'mkdf-tours'),
 					'disabled' => 'disabled'
 				)
 			)) ?>
 		<?php else : ?>
-			<input disabled data-redirecting-label="<?php esc_attr_e('Redirecting...', 'mkdf-tours') ?>" data-loading-label="<?php esc_attr_e('Working...', 'mkdf-tours'); ?>" type="submit" value="<?php echo esc_attr('Book now', 'mkdf-tours'); ?>">
+			<input disabled data-redirecting-label="<?php esc_attr_e('Redireccionando...', 'mkdf-tours') ?>" data-loading-label="<?php esc_attr_e('Reservando...', 'mkdf-tours'); ?>" type="submit" value="<?php echo esc_attr('Reserva ahora!', 'mkdf-tours'); ?>">
 		<?php endif; ?>
 	</form>
 </div>
