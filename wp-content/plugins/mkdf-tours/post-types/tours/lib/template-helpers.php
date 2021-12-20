@@ -34,7 +34,7 @@ if(!function_exists('mkdf_tours_get_tour_min_age')) {
 		$tour_id = empty($tour_id) ? get_the_ID() : $tour_id;
 
 		$tour_min_age   = get_post_meta($tour_id, 'mkdf_tours_info_min_years', true);
-		$min_age_suffix = apply_filters('mkdf_tours_min_age_suffix', '+');
+		$min_age_suffix = apply_filters('mkdf_tours_min_age_suffix', '');
 
 		return empty($tour_min_age) ? false : $tour_min_age.$min_age_suffix;
 	}
