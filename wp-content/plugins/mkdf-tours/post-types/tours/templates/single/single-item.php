@@ -35,9 +35,9 @@ extract($tour_sections);
 
                     <?php mkdf_tours_get_tour_info_part('tour-info-parts/title'); ?>
                     <div class="mkdf-tour-item-short-info">
-                        <?php mkdf_tours_get_tour_info_part('tour-info-parts/years'); ?>
                         <?php mkdf_tours_get_tour_info_part('tour-info-parts/destination'); ?>
                         <?php mkdf_tours_get_tour_info_part('tour-info-parts/categories'); ?>
+                        <?php mkdf_tours_get_tour_info_part('tour-info-parts/years'); ?>
                     </div>
                     <?php mkdf_tours_get_tour_info_part('tour-info-parts/content'); ?>
                     <?php echo mkdf_core_list_review_details('simple-overall'); ?>
