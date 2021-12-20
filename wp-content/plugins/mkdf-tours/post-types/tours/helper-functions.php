@@ -198,7 +198,7 @@ if(!function_exists('mkdf_tours_check_tour_sections')) {
 			switch($section_key) {
 				case 'show_info_section' :
 					$return_array[$section_key]['icon']  = 'ion-information-circled';
-					$return_array[$section_key]['title'] = esc_html__('INFORMATION','mkdf-tours');
+					$return_array[$section_key]['title'] = esc_html__('DETALLE DE LA RUTA','mkdf-tours');
 					$return_array[$section_key]['id']    = 'tour-item-info-id';
 					break;
 				case 'show_tour_plan_section' :
@@ -208,12 +208,12 @@ if(!function_exists('mkdf_tours_check_tour_sections')) {
 					break;
 				case 'show_location_section' :
 					$return_array[$section_key]['icon']  = 'ion-ios-location';
-					$return_array[$section_key]['title'] = esc_html__('LOCATION','mkdf-tours');
+					$return_array[$section_key]['title'] = esc_html__('DESTINO','mkdf-tours');
 					$return_array[$section_key]['id']    = 'tour-item-location-id';
 					break;
 				case 'show_gallery_section' :
 					$return_array[$section_key]['icon']  = 'ion-camera';
-					$return_array[$section_key]['title'] = esc_html__('GALLERY','mkdf-tours');
+					$return_array[$section_key]['title'] = esc_html__('GALERÍA','mkdf-tours');
 					$return_array[$section_key]['id']    = 'tour-item-gallery-id';
 					break;
 				case 'show_review_section' :
