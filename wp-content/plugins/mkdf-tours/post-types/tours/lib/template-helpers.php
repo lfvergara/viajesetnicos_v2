@@ -315,7 +315,8 @@ if(!function_exists('mkdf_tours_get_tour_info_table_data')) {
 
 		if(!empty($departure_option)) {
 			$departure_item = array(
-				'text'  => esc_html__('Departure/Return Location', 'mkdf-tours'),
+				//'text'  => esc_html__('Departure/Return Location', 'mkdf-tours'),
+				'text'  => esc_html__('Salidas desde:', 'mkdf-tours'),
 				'value' => $departure_option
 			);
 
@@ -369,7 +370,7 @@ if(!function_exists('mkdf_tours_get_tour_info_table_data')) {
 			}
 
 			$checked_attributes_item = array(
-				'text'       => esc_html__('Included', 'mkdf-tours'),
+				'text'       => esc_html__('Incluye', 'mkdf-tours'),
 				'html_class' => 'mkdf-tours-checked-attributes',
 				'value'      => $checked_attributes_titles
 			);
@@ -388,7 +389,7 @@ if(!function_exists('mkdf_tours_get_tour_info_table_data')) {
 			}
 
 			$not_checked_attributes_item = array(
-				'text'       => esc_html__('Not Included', 'mkdf-tours'),
+				'text'       => esc_html__('No Incluye', 'mkdf-tours'),
 				'html_class' => 'mkdf-tours-unchecked-attributes',
 				'value'      => $not_checked_attributes
 			);
