@@ -1,5 +1,5 @@
+<!--
 <div class="mkdf-reviews-list-info mkdf-reviews-simple">
-
     <div class="mkdf-reviews-number-wrapper">
         <span class="mkdf-stars-wrapper">
             <span class="mkdf-stars-wrapper-inner">
@@ -42,5 +42,5 @@
             </span>
         </span>
     </div>
-
 </div>
+-->
