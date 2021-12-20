@@ -15,7 +15,7 @@ $title = get_the_title();
 		</span>
 
 		<span class="mkdf-tour-item-price-text">
-			<?php esc_html_e('per person', 'mkdf-tours'); ?>
+			<?php  //esc_html_e('per person', 'mkdf-tours'); ?>
 		</span>
 	</div>
 </div>
