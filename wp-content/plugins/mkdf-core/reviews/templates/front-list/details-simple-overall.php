@@ -1,5 +1,5 @@
 <div class="mkdf-reviews-list-info mkdf-reviews-simple">
-<!--
+
     <div class="mkdf-reviews-number-wrapper">
         <span class="mkdf-stars-wrapper">
             <span class="mkdf-stars-wrapper-inner">
@@ -11,11 +11,11 @@
                     */
                     ?>
                         <i class="fa fa-star" aria-hidden="true"></i>
-                    <?php } 
-                    /*
+                    <?php /*} */
+                    
                     ?>
                     <?php
-                        
+                        /*
                         if($review_rating < 5){
                             if($review_rating < 1){
                                 $review_rating = 0;
@@ -42,5 +42,5 @@
             </span>
         </span>
     </div>
--->
+
 </div>
