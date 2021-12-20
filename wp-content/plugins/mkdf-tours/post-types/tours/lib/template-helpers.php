@@ -288,10 +288,10 @@ if(!function_exists('mkdf_tours_get_tour_min_age_html')) {
 
 		<?php if($min_age) : ?>
 
-			<div class="mkdf-tour-min-age-holder">
+			<div class="mkdf-tour-min-age-holder" style="margin-top:  0%;">
 			    
-			    <span class="mkdf-tour-min-age-icon mkdf-tour-info-icon" style="margin-top:  2%;">
-				    <span class="icon_group"></span>
+			    <span class="mkdf-tour-min-age-icon mkdf-tour-info-icon">
+				    <!--<span class="icon_group"></span>-->
 			    </span>
 
 				<span class="mkdf-tour-info-label" style="font-size: 10px;">
