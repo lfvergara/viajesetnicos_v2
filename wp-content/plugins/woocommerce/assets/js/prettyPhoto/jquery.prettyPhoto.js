@@ -61,7 +61,7 @@
 											</div> \
 											<p class="pp_description"></p> \
 											<div class="pp_social">{pp_social}</div> \
-											<a class="pp_close" href="#">Close</a> \
+											<a class="pp_close" href="#"><span class="fa fa-close"></span></a> \
 										</div> \
 									</div> \
 								</div> \
