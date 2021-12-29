@@ -47,7 +47,7 @@
 								<div class="pp_content"> \
 									<div class="pp_loaderIcon"></div> \
 									<div class="pp_fade"> \
-										<a href="#" class="pp_close" title="Expand the image">Expand</a> \
+										<a href="#" class="pp_expand" title="Expand the image">Expand</a> \
 										<div class="pp_hoverContainer"> \
 											<a class="pp_next" href="#">next</a> \
 											<a class="pp_previous" href="#">previous</a> \
@@ -394,7 +394,7 @@
 
 			if(!doresize) doresize = true; // Allow the resizing of the images
 			if(settings.allow_expand) {
-				$('.pp_contract').removeClass('pp_contract').addClass('pp_close');
+				$('.pp_contract').removeClass('pp_contract').addClass('pp_expand');
 			}
 
 			_hideContent(function(){ $.prettyPhoto.open(); });
@@ -521,9 +521,9 @@
 
 				if(settings.allow_expand) {
 					if(pp_dimensions['resized']){ // Fade the resizing link if the image is resized
-						$('a.pp_close,a.pp_contract').show();
+						$('a.pp_expand,a.pp_contract').show();
 					}else{
-						$('a.pp_close').hide();
+						$('a.pp_expand').hide();
 					}
 				}
 
@@ -834,13 +834,13 @@
 
 
 			if(settings.allow_expand) {
-				$('a.pp_close').on('click',function(e){
+				$('a.pp_expand').on('click',function(e){
 					// Expand the image
-					if($(this).hasClass('pp_close')){
-						$(this).removeClass('pp_close').addClass('pp_contract');
+					if($(this).hasClass('pp_expand')){
+						$(this).removeClass('pp_expand').addClass('pp_contract');
 						doresize = false;
 					}else{
-						$(this).removeClass('pp_contract').addClass('pp_close');
+						$(this).removeClass('pp_contract').addClass('pp_expand');
 						doresize = true;
 					};
 
