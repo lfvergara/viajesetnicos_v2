@@ -468,7 +468,7 @@
                                 <div class="pp_content"> \
                                     <div class="pp_loaderIcon"></div> \
                                     <div class="pp_fade"> \
-                                        <a href="#" class="pp_expand" title="Expand the image">Expand</a> \
+                                        <a href="#" class="pp_close" title="Cerrar">Cerrando</a> \
                                         <div class="pp_hoverContainer"> \
                                             <a class="pp_next" href="#"><span class="fa fa-angle-right"></span></a> \
                                             <a class="pp_previous" href="#"><span class="fa fa-angle-left"></span></a> \
