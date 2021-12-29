@@ -13267,7 +13267,7 @@ body .pp_pic_holder a.pp_close {
   background: none !important;
   color: #808285;
   font-family: 'Ionicons';
-  font-size: 0;
+  font-size: 30px;
   line-height: 1;
   text-indent: 0;
   cursor: pointer;
